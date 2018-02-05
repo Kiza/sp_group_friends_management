@@ -22,7 +22,8 @@ class Message
     end
 
     def self.mentions(text)
-        matches = text.scan(/(?:[^@\s]+)@(?:(?:[-a-z0-9]+\.)+[a-z]{2,})/i)
+        matches = []
+        matches = text.scan(/(?:[^@\s]+)@(?:(?:[-a-z0-9]+\.)+[a-z]{2,})/i) unless text.nil?
         return matches
     end
 end
