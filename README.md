@@ -1,6 +1,6 @@
 # SP Group - Full Stack Engineer - pre-interview test
 
-Test details, https://gist.github.com/winston/51d26e4587b5e0bbf03fcad558111c08
+Task details, https://gist.github.com/winston/51d26e4587b5e0bbf03fcad558111c08
 
 
 ## Requirement and depedencies
