@@ -2,10 +2,10 @@ class BlacklistController < ApplicationController
 
   # POST /blacklist
   def create
-    requestor = params[:requestor].strip
+    requestor = params[:requestor]
     requestor = requestor.strip unless requestor.nil?
 
-    target = params[:target].strip
+    target = params[:target]
     target = target.strip unless target.nil?
 
     blacklist = Blacklist.new(by_user: requestor, blocked: target)

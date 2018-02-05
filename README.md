@@ -27,3 +27,9 @@ Services will be running at `http://localhost:3000`
 - [Create subscription](docs/create_subscription.md)
 - [Block user](docs/create_blacklist.md)
 - [Recipients list](docs/recipients_list.md)
+
+## API Host
+
+API is hosted at https://morning-castle-84945.herokuapp.com/
+
+For more infomation, [Live API Examples](docs/live_api.md).

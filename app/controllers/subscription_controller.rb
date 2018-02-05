@@ -2,10 +2,10 @@ class SubscriptionController < ApplicationController
 
   # POST subscription
   def create
-    requestor = params[:requestor].strip
+    requestor = params[:requestor]
     requestor = requestor.strip unless requestor.nil?
 
-    target = params[:target].strip
+    target = params[:target]
     target = target.strip unless target.nil?
 
     subscription = Subscription.new(by_user:requestor, to_user:target)

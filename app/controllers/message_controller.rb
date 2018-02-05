@@ -5,7 +5,7 @@ class MessageController < ApplicationController
     sender = params[:sender]
     sender = sender.strip unless sender.nil?
 
-    text = params[:text].strip
+    text = params[:text]
     text = text.strip unless text.nil?
 
     send_to = Message.recipients(sender, text)
