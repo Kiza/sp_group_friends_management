@@ -69,7 +69,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"friends":["111@bb.cc", "a
 
 ## Recipients list
 ```
-curl -X GET -H "Content-Type: application/json" -d '{"sender":"aa@bb.cc","text":"someone@something.com and here."}' https://morning-castle-84945.herokuapp.com//message/recipients
+curl -X GET -H "Content-Type: application/json" -d '{"sender":"aa@bb.cc","text":"someone@something.com and here."}' https://morning-castle-84945.herokuapp.com/message/recipients
 > {"success":true,"recipients":["bb@bb.cc","cc@bb.cc","dd@bb.cc","11@bb.cc","22@bb.cc","someone@something.com"]}
 
 # bb@bb.cc blocks aa@bb.cc
@@ -77,6 +77,6 @@ curl -X POST -H "Content-Type: application/json" -d '{"requestor":"bb@bb.cc", "t
 > {"success":true}
 
 # bb@bb.cc will not listed in the recipients
-curl -X GET -H "Content-Type: application/json" -d '{"sender":"aa@bb.cc","text":"someone@something.com and here."}' https://morning-castle-84945.herokuapp.com//message/recipients
+curl -X GET -H "Content-Type: application/json" -d '{"sender":"aa@bb.cc","text":"someone@something.com and here."}' https://morning-castle-84945.herokuapp.com/message/recipients
 > {"success":true,"recipients":["cc@bb.cc","dd@bb.cc","11@bb.cc","22@bb.cc","someone@something.com"]}
 ```
