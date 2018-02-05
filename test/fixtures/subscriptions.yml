@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   to_user: MyString
+#   by_user: MyString
+
+# two:
+#   to_user: MyString
+#   by_user: MyString
